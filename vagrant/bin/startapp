@@ -1,0 +1,2 @@
+#!/bin/bash
+ssh -F config/ssh_config -q -t default "bash -l -c 'cd /home/vagrant/project && mkdir applications/$1 && python manage.py startapp $1 applications/$1'"

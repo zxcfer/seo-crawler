@@ -1,0 +1,2 @@
+#!/bin/bash
+ssh -F config/ssh_config -q -t default "bash -l -c 'pgweb --host=\$DJANGO_DATABASE_HOST --db=\$DJANGO_DATABASE_NAME --user=\$DJANGO_DATABASE_USER --pass=\$DJANGO_DATABASE_PASSWORD --port=\$DJANGO_DATABASE_PORT --bind=0.0.0.0 --listen=5000'"

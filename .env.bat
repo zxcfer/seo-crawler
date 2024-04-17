@@ -1,0 +1,1 @@
+set PROJECT_HOME=D:/dev/porta/seospider

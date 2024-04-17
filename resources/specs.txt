@@ -1,0 +1,47 @@
+CRAWLER 2
+============================================================================
+FILTRO: No ejecutar si ya existe status para fecha X de website Y
+poner condicional si es produccion -a prod, etonces poner filtro, si -a dev omitir
+
+title
+    si no existe titulo =>                      alert:101:3: Title not found
+    si hay mas de un titulo =>                  alert:102:1: More than one title
+    si cambio respecto del dia anterior =>      alert:103:2: Title changed
+
+Meta description tag
+    # ids = title.select('//meta/@description').extract()
+    si no existe  =>                            alert:201:3: Meta tag Description not found
+    si hay mas de un tag =>                     alert:201:1: More than one Meta tag Description
+    si cambio respecto del dia anterior =>      alert:203:2: Title changed
+
+H1 heading
+    # ids = title.select('//meta/@description').extract()
+    si no existe  =>                            alert:301:2: Meta tag Description not found
+    si hay mas de un tag =>                     alert:302:1: More than one Meta tag Description
+    si cambio respecto del dia anterior =>      alert:303:0: Title changed
+
+Image alt text:
+    si no hay "alt" en imagenes:                alert:401:2: No "alt" in image tags for {N} images
+
+URL parameters detected
+    paramtros en href:                          alert:501:2: Parameters detected in {N} links
+
+Questions: 
+1: what are conversion tags
+2: what are Canonical tags
+3: what are Pagination tags
+
+
+CRAWLER 2
+============================================================================
+Website uptime/downtime
+    alert => Website is down: 4
+
+CRAWLER 3
+=============================================================================
+Robots:
+    Meta robots tags (NOINDEX,FOLLOW / NOINDEX,NOFOLLOW / INDEX,FOLLOW)
+
+WebsiteXML:
+
+Google Analytics tags

@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-lg-12">
+    <div class="panel">
+    <div class="panel-body">
+      <ul class="nav navbar-top-links navbar-left settings-menu">
+        <li>
+          <a class="btn btn-plomo menupadding" href="{% url "settings:keyword:list" page="1" %}">
+            Keywords
+          </a>
+        </li>
+        <li>
+          <a class="btn btn-plomo menupadding" href="{% url "settings:userdomain:list" page="1" %}">
+            Your Domains
+          </a>
+        </li>
+        <li>
+          <a class="btn btn-plomo menupadding" href="{% url "settings:trackdomain:list" page="1" %}">
+            Track Domains
+          </a>
+        </li>
+        <li>
+          <a class="btn btn-plomo menupadding" href="{% url 'settings:urlmapping:list' page='1' %}">
+            URL Mapping
+          </a>
+        </li>
+      </ul>
+    </div>  
+    </div>
+  </div>
+</div>

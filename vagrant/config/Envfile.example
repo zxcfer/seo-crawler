@@ -1,0 +1,13 @@
+# Django settings
+
+export DJANGO_DEBUG=True
+export DJANGO_DATABASE_NAME=projectdb
+export DJANGO_DATABASE_USER=test
+export DJANGO_DATABASE_PASSWORD=test
+export DJANGO_DATABASE_HOST=localhost
+export DJANGO_DATABASE_PORT=5432
+export DJANGO_EMAIL_USE_TLS=True
+export DJANGO_EMAIL_HOST=smtp.gmail.com
+export DJANGO_EMAIL_HOST_USER=
+export DJANGO_EMAIL_HOST_PASSWORD=
+export DJANGO_EMAIL_PORT=587
